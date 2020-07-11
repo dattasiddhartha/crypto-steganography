@@ -5,10 +5,10 @@
 
 #### Stenography
 
-<img src="data/original.png" height="200px"></img>
-<img src="data/encrypted.png" height="200px"></img>
-<img src="data/mask.png" height="200px"></img>
-<img src="data/restored.png" height="200px"></img>
+<img src="data/original.png" height="150px"></img>
+<img src="data/encrypted.png" height="150px"></img>
+<img src="data/mask.png" height="150px"></img>
+<img src="data/restored.png" height="150px"></img>
 
 Accepts the user's original video, obfuscates the video with a stenographic mask, allows user to store mask array, then allows user to retrieve mask array to decrpyt the video each time they wish to view it.
 
