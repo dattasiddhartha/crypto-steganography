@@ -1,7 +1,22 @@
-#### !PiedPiper
+## !PiedPiper
+###### Empower users to upload their videos in the public domain while upholding privacy. 
+
+###### <i>Collaborators</i>: [Kaustav Halder](https://github.com/kaustavha), [Yash Sinha](https://github.com/ysinha1), [Siddhartha Datta](https://github.com/dattasiddhartha)
+
+#### Stenography
+
+<img src="data/original.png" height="200px"></img>
+<img src="data/encrypted.png" height="200px"></img>
+<img src="data/mask.png" height="200px"></img>
+<img src="data/restored.png" height="200px"></img>
+
+Accepts the user's original video, obfuscates the video with a stenographic mask, allows user to store mask array, then allows user to retrieve mask array to decrpyt the video each time they wish to view it.
+
+Install dependencies with `pip install -r requirements.txt`. Run stenographic mask generator `stenographic_mask_generator.py` to return mask arrays (refer to `example_stenography.ipynb` for example demonstration).
 
 Download weights from
 [here](https://drive.google.com/drive/folders/1ANqflh1dxSfgdFwvH1mZqZ8_vPS6WipB?usp=sharing).
 * `cycle_gan/checkpoints` placed in `vision/`
-* `pix2pix/checkpoints` placed in `vision/foreground_removal/`
-* `yolo/checkpoints` placed in `vision/foreground_removal/`
+
+Stenography functionality currently supported:
+* CycleGAN ( `"apple2orange", "horse2zebra", "style_monet", "style_vangogh", "summer2winter_yosemite"`)
