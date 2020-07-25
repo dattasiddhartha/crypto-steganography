@@ -1,5 +1,6 @@
 ## !PiedPiper
 ###### Empower users to upload their videos in the public domain while upholding privacy. 
+<img src="https://i.imgur.com/Jtx0R11.png"></img>
 
 ###### <i>Collaborators</i>: [Kaustav Halder](https://github.com/kaustavha), [Yash Sinha](https://github.com/ysinha1), [Siddhartha Datta](https://github.com/dattasiddhartha)
 
