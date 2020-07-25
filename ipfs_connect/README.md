@@ -33,3 +33,6 @@ You can also pass in a custom styleindex, defaults to 1.
 file upload
   - static test page: http://localhost:2999/fileupload
   - file upload post route: http://localhost:2999/upload
+
+Store on ipfs via powergate js cli
+  - http://localhost:2999/pow/store
