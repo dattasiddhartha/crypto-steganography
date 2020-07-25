@@ -17,13 +17,6 @@ const host = "http://0.0.0.0:6002" // or whatever powergate instance you want
 
 const pow = createPow({ host })
 main(filepath)
-// const token = makeToken()
-// // await pow.setToken(token)
-// store_file_ffs(filepath)
-
-// async function setToken(to) {
-//     const token
-// }
 
 async function main(filepath) {
   const token = await makeToken()
