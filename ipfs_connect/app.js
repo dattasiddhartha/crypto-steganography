@@ -11,6 +11,7 @@ const multer = require("multer");
 const tmppath = './tmp/'
 const file_store_path = "../data"
 const pycli = 'python ../run_cli.py';
+const powjscli = 'node ./js_cli/pow.js'
 
 app.use(express.json())
 
@@ -41,6 +42,11 @@ app.post('/py/restore', (req, res) => {
   styleindex = styleindex ? styleindex.toString() : '1';
 
   async_call_pycli('restore', filename, styleindex, res);
+})
+
+app.post('/pow/store', (req, res) => {
+  let { filename } = req.body;
+  async_call_pow(filename, res)
 })
 
 
@@ -79,16 +85,26 @@ app.post(
 
 app.use("/fileupload", express.static(path.join(__dirname, "./public/index.html")));
 
-async function async_call_pycli(func, filename, styleindex, res) {
-  let cmd = `${pycli} --function ${func} --filename ${filename} --style_index ${styleindex}`;
+
+async function async_shell_call(cmd, res) {
   console.log(`Executing shell cmd: ${cmd}`)
-  const { stdout, stderr } = await exec(cmd);
-  console.log('stdout:', stdout);
-  console.error('stderr:', stderr);
+  const { stdout, stderr } = await exec(cmd)
+  console.log('stdout:', stdout)
+  console.error('stderr:', stderr)
   if (stderr.length > 0) {
     handleError(stderr, res)
   }
   res.status(200).contentType("text/plain").end(stdout);
+}
+
+async function async_call_pow(filename, res) {
+  let cmd = `${powjscli} ${filename}`
+  async_shell_call(cmd, res)
+}
+
+async function async_call_pycli(func, filename, styleindex, res) {
+  let cmd = `${pycli} --function ${func} --filename ${filename} --style_index ${styleindex}`
+  async_shell_call(cmd, res)
 }
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
