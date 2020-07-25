@@ -2,11 +2,12 @@
 import cv2
 import os, glob, shutil
 from PIL import Image
-import matplotlib, random
+import matplotlib, random, json
 import torch, torchvision
 import torchvision.transforms as T
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 from vision.cyclegan import CYCLEGAN
 from vision.video import FrameGeneration, VideoGeneration
 
@@ -142,10 +143,19 @@ def RunStenography(filename, style_index, mode, fps, display):
                                 )
             stenographic_masks_stored.append(masked_img_array)
 
+    with open("./data/"+str(filename)+".json", 'w') as outfile:
+        pd.Series(stenographic_masks_stored).to_json(path_or_buf=outfile, orient='values')
+    print("JSON array stored, filename: ", "./data/"+str(filename)+".json")
+            
     return stenographic_masks_stored
     
     
-def RestoreVideo(stenographic_masks_stored, filename, style_index, mode, fps, display):
+def RestoreVideo(filename, style_index, mode, fps, display):
+    
+    # load array from JSON
+    with open("./data/"+str(filename)+".json") as outfile:
+        json_load = json.loads(outfile.read())
+        stenographic_masks_stored = np.float32(np.asarray(json_load))
     
     # Count frames -- can parse frames from the encrypted video
     filenames = []
