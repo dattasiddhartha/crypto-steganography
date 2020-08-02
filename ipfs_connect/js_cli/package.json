@@ -1,24 +1,23 @@
 {
-    "name": "crypto-steganography",
-    "version": "1.0.0",
-    "description": "###### <i>Collaborators</i>: [Kaustav Halder](https://github.com/kaustavha), [Yash Sinha](https://github.com/ysinha1), [Siddhartha Datta](https://github.com/dattasiddhartha)",
-    "main": "pow.js",
-    "type": "module",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/kaustavha/crypto-steganography.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/kaustavha/crypto-steganography/issues"
-    },
-    "homepage": "https://github.com/kaustavha/crypto-steganography#readme",
-    "dependencies": {
-      "@textile/powergate-client": "^0.1.0"
-    }
+  "name": "crypto-steganography",
+  "version": "1.0.0",
+  "description": "###### <i>Collaborators</i>: [Kaustav Halder](https://github.com/kaustavha), [Yash Sinha](https://github.com/ysinha1), [Siddhartha Datta](https://github.com/dattasiddhartha)",
+  "main": "pow.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaustavha/crypto-steganography.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaustavha/crypto-steganography/issues"
+  },
+  "homepage": "https://github.com/kaustavha/crypto-steganography#readme",
+  "dependencies": {
+    "@textile/powergate-client": "^0.1.0"
   }
-  
+}

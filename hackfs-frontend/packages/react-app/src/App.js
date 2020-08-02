@@ -124,10 +124,12 @@ function App() {
       </div>
 
       <div style={{padding:32,textAlign: "left"}}>
-        Paste JSON file:
-        <TextArea rows={10} value={data} onChange={(e)=>{
+        {/* <TextArea rows={10} value={data} onChange={(e)=>{
           setData(e.target.value)
-        }} />
+        }} /> */}
+        <input type="file" name="file" onChange={(e)=>{
+          setData(e.target.files[0])
+        }}/>
         <Button style={{margin:8}} loading={sending} size="large" shape="round" type="primary" onClick={async()=>{
           console.log("UPLOADING...")
           setSending(true)
