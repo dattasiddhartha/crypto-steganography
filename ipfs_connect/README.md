@@ -6,8 +6,8 @@
    2. ```
         pow ffs create
         export POW_TOKEN=<token value from above>
-        pow ffs addToHot ./crypto-steganography/data/mask.png 
-        pow ffs push --watch <cid from ^>
+        pow ffs stage ./crypto-steganography/data/mask.png 
+        pow ffs config push --watch <cid from ^>
       ```
 2. image retrieval
    1. `pow ffs get <cid> <filename>`
