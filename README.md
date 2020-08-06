@@ -1,10 +1,7 @@
-## [!PiedPiper](https://www.youtube.com/watch?v=YoaCsQHgMEs)
+## [!PiedPiper](https://www.youtube.com/watch?v=YoaCsQHgMEs) <img src="https://i.imgur.com/Jtx0R11.png" height="30px"></img>
 ###### Empower users to upload their videos in the public domain while upholding privacy. 
-<img src="https://i.imgur.com/Jtx0R11.png"></img>
 
 ###### <i>Collaborators</i>: [Siddhartha Datta](https://github.com/dattasiddhartha), [Yash Sinha](https://github.com/ysinha1), [Kaustav Halder](https://github.com/kaustavha) 
-
-<img src="data/!PiedPiper.jpg" height="350px"></img>
 
 #### > Steganography
 
