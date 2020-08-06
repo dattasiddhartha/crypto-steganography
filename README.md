@@ -1,10 +1,12 @@
-## !PiedPiper
+## [!PiedPiper](https://www.youtube.com/watch?v=YoaCsQHgMEs)
 ###### Empower users to upload their videos in the public domain while upholding privacy. 
 <img src="https://i.imgur.com/Jtx0R11.png"></img>
 
-###### <i>Collaborators</i>: [Kaustav Halder](https://github.com/kaustavha), [Yash Sinha](https://github.com/ysinha1), [Siddhartha Datta](https://github.com/dattasiddhartha)
+###### <i>Collaborators</i>: [Siddhartha Datta](https://github.com/dattasiddhartha), [Yash Sinha](https://github.com/ysinha1), [Kaustav Halder](https://github.com/kaustavha) 
 
-#### Steganography
+<img src="data/!PiedPiper.jpg" height="350px"></img>
+
+#### > Steganography
 
 <img src="data/original.png" height="150px"></img>
 <img src="data/encrypted.png" height="150px"></img>
@@ -22,7 +24,7 @@ Download weights from
 Stenography functionality currently supported:
 * CycleGAN ( `"apple2orange", "horse2zebra", "style_monet", "style_vangogh", "summer2winter_yosemite"`)
 
-#### CLI tool
+#### > CLI tool
 
 Run `python run_cli.py -h` for help / argument options. Parameters include
 ```
@@ -49,3 +51,10 @@ Run this in command line to restore masks onto original image:
 python run_cli.py --function restore --filename cyclegan_test --style_index 1
 ```
 
+#### > [ipfs JSON upload/retrieval](https://github.com/dattasiddhartha/crypto-steganography/tree/master/hackfs-frontend)
+
+Refer to instructions in the sub-repo readme.
+
+#### > [powergate js](https://github.com/dattasiddhartha/crypto-steganography/tree/master/ipfs_connect)
+
+Refer to instructions in the sub-repo readme.
