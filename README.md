@@ -12,6 +12,8 @@
 
 Accepts the user's original video, obfuscates the video with a stenographic mask, allows user to store mask array, then allows user to retrieve mask array to decrpyt the video each time they wish to view it.
 
+<img src="data/!PiedPiper.jpg" height="300px"></img>
+
 Install dependencies with `pip install -r requirements.txt`. Run stenographic mask generator `stenographic_mask_generator.py` to return mask arrays (refer to `example_stenography.ipynb` for example demonstration).
 
 Download weights from
